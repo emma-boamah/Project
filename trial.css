@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    border:2px solid gray;
+    border-radius: 5px;
+    height: ;
+}
+
+.container h1{
+    text-align: center;
+}
