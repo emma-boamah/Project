@@ -13,7 +13,7 @@ if(isset($_POST["submit"])){
         echo "Connection failed". $e->getMessage();
     }
     // GET USER INPUTS
-    $full_Name = htmlspecialchars($_POST["firstname"] . $_POST["lastname"]);
+    $full_Name = htmlspecialchars($_POST["firstname"] ." ". $_POST["lastname"]);
     $email = htmlspecialchars($_POST["email"]);
     $when_it_happened = htmlspecialchars($_POST["date"]);
     $how_long = htmlspecialchars($_POST["how_long"]);
