@@ -38,6 +38,10 @@ if(isset($_POST["submit"])){
         $errors[] = "Date of incident is required!";
     }
 
+    if(empty($alien_description) || !ctype_alnum($alien_description)){
+        $errors[] = "Input invalid at alien_description";
+    }
+
     if(!empty($errors)){
         echo 'Errors:';
         foreach($errors as $error){
