@@ -27,6 +27,8 @@ if(isset($_POST["submit"])){
 
     if(empty($full_Name)){
         $errors[] = "Please enter your first name or last name";
+    }elseif(!ctype_alpha($full_Name)){
+        $errors[] = "Name must contain alphabets only";
     }
     if(empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)){
         $errors[] = "Valid email is required!";
